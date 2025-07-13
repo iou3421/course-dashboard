@@ -129,8 +129,8 @@ const TeacherLayout = () => {
             </Typography>
             <Box>
             <img
-              src="/logo192.png"
-              alt="Logo"
+                src="/logo.jpg"
+                alt="Logo"
               style={{ height: 40, width: 40, borderRadius: "50%" }}
             />
             </Box>

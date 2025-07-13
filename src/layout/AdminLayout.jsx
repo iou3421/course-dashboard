@@ -141,7 +141,7 @@ const AdminLayout = () => {
             </Typography>
             <Box>
               <img
-                src="/logo192.png"
+                src="/logo.jpg"
                 alt="Logo"
                 style={{ height: 40, width: 40, borderRadius: "50%" }}
               />
