@@ -84,7 +84,7 @@ const TeacherList = () => {
         👨‍🏫 Teachers
       </Typography>
 
-      {/* Search Bar */}
+
       <Box mb={2}>
         <TextField
           label="Search teachers..."

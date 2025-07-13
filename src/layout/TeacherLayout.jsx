@@ -48,7 +48,6 @@ const TeacherLayout = () => {
 
   return (
     <Box sx={{ display: "flex", minHeight: "100vh" }}>
-      {/* Sidebar */}
       <Drawer
         variant="permanent"
         sx={{
@@ -95,7 +94,6 @@ const TeacherLayout = () => {
 
         <Box sx={{ flexGrow: 1 }} />
 
-        {/* Logout */}
         <Box sx={{ px: 2, pb: 2 }}>
           {open ? (
             <Button
@@ -115,9 +113,7 @@ const TeacherLayout = () => {
         </Box>
       </Drawer>
 
-      {/* Main content area with top bar */}
       <Box sx={{ flexGrow: 1, backgroundColor: "#f5f7fb" }}>
-        {/* Top AppBar */}
         <AppBar
           position="static"
           sx={{
@@ -127,7 +123,7 @@ const TeacherLayout = () => {
           }}
         >
           <Toolbar sx={{ justifyContent: "space-between" }}>
-            <Box sx={{ width: 40 }} /> {/* Left empty for symmetry */}
+            <Box sx={{ width: 40 }} /> 
             <Typography variant="h6" sx={{ fontWeight: "bold", letterSpacing: 1 }}>
               كورساتي
             </Typography>

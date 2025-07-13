@@ -114,7 +114,7 @@ const CourseDetails = () => {
           </TableBody>
         </Table>
 
-        {/* Dialog for Add/Edit */}
+   
         <Dialog open={open} onClose={handleClose}>
           <DialogTitle>{editVideo ? "Edit Video" : "Add New Video"}</DialogTitle>
           <DialogContent>

@@ -30,6 +30,7 @@ const navItems = [
   { label: "Courses", icon: <School />, path: "/admin/courses" },
   { label: "Exams Overview", icon: <Assignment />, path: "/admin/exams-overview" },
   { label: "Analytics", icon: <BarChart />, path: "/admin/analytics" },
+  { label: "Teacher Requests", icon: <People />, path: "/admin/teacher-requests" }, // ✅ NEW
 ];
 
 const drawerWidth = 240;

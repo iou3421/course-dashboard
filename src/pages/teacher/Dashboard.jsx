@@ -26,7 +26,7 @@ import {
 } from "@mui/icons-material";
 import { BarChart, PieChart } from "@mui/x-charts";
 
-/* ───── MOCK DATA ───── */
+
 const teacherStats = {
   totalCourses: 3,
   totalStudents: 295,
@@ -72,7 +72,7 @@ const courseEngagement = [
   { title: "Database Systems", completion: "90%", avgWatch: "83%" },
 ];
 
-/* ───── COMPONENT ───── */
+
 const Dashboard = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
@@ -84,7 +84,7 @@ const Dashboard = () => {
         📊 Teacher Dashboard Overview
       </Typography>
 
-      {/* Summary cards */}
+  
       <Grid container spacing={3} mb={3}>
         {statCards.map((s, idx) => (
           <Grid item xs={12} sm={6} md={3} key={idx}>
@@ -99,7 +99,7 @@ const Dashboard = () => {
         ))}
       </Grid>
 
-      {/* Charts */}
+
       <Grid container spacing={3} mb={3}>
         <Grid item xs={12} md={6}>
           <Card>
@@ -146,7 +146,7 @@ const Dashboard = () => {
         </Grid>
       </Grid>
 
-      {/* Tasks and Activity */}
+
       <Grid container spacing={3} mb={3}>
         <Grid item xs={12} md={6}>
           <Card>
@@ -179,7 +179,7 @@ const Dashboard = () => {
         </Grid>
       </Grid>
 
-      {/* Course Engagement */}
+   
       <Card>
         <CardContent>
           <Typography variant="h6" gutterBottom>📈 Course Engagement Metrics</Typography>

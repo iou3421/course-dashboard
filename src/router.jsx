@@ -11,7 +11,8 @@ import ExamsOverview from "./pages/admin/ExamsOverview";
 import Courses2 from "./pages/admin/Courses";
 
 
-
+import TeacherRegister from "./pages/TeacherRegister";
+import TeacherRequests from "./pages/admin/TeacherRequests";
 
 import Dashboard from "./pages/teacher/Dashboard";
 import Courses from "./pages/teacher/Courses";
@@ -30,8 +31,8 @@ export default function AppRouter() {
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/admin" element={<AdminLayout />} />
+        <Route path="/register-teacher" element={<TeacherRegister />} />
 
-        {/* ✅ Nested routes for /teacher */}
         <Route path="/teacher" element={<TeacherLayout />}>
           <Route index element={<Dashboard />} />
           <Route path="courses" element={<Courses />} />
@@ -49,6 +50,7 @@ export default function AppRouter() {
           <Route path="analytics" element={<PlatformAnalytics />} />
           <Route path="courses" element={<Courses2 />} />
           <Route path="exams-overview" element={<ExamsOverview />} />
+          <Route path="/admin/teacher-requests" element={<TeacherRequests />} />
         </Route>
 
 
